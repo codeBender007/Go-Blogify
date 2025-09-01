@@ -1,0 +1,15 @@
+# Binaries
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Vendor folder (agar use ho raha ho)
+vendor/
+
+# Env variables
+.env
+
+# Logs
+*.log

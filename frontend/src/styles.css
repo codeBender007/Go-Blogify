@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root { --primary:#111827; --accent:#2563eb; --muted:#f3f4f6; }
+* { box-sizing:border-box; }
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', 'Noto Sans', Arial; background:#fff; color:#111; }
+a { color: var(--accent); text-decoration: none; }
+.container { max-width: 1000px; margin: 0 auto; padding: 16px; }
+
+.nav { display:flex; gap:16px; align-items:center; justify-content:space-between; padding:12px 16px; background:var(--muted); border-bottom:1px solid #e5e7eb; position:sticky; top:0; }
+.nav .brand { font-weight:800; letter-spacing:0.3px; }
+.nav .links { display:flex; gap:12px; }
+.btn { border:1px solid #e5e7eb; padding:8px 12px; border-radius:8px; background:#fff; cursor:pointer; }
+.btn.primary { background: var(--accent); color:#fff; border-color: var(--accent); }
+.input, textarea { width:100%; padding:10px 12px; border:1px solid #e5e7eb; border-radius:8px; }
+.card { border:1px solid #e5e7eb; border-radius:12px; padding:16px; background:#fff; }
+.grid { display:grid; gap:16px; }
+.grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 768px){ .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; } }
+.badge { font-size:12px; padding:2px 8px; border:1px solid #e5e7eb; border-radius:999px; background:#fafafa; }
+.header { margin: 16px 0 8px; font-size: 24px; font-weight: 800; }
+.subtle { color:#6b7280; font-size: 14px; }
+.footer-space { height: 32px; }
